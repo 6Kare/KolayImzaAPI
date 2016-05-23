@@ -3,7 +3,7 @@
 
 ## Kolay İmza Nasıl Çalışır ?
 
-Kolay imza **"sign:...."** adresi ile başlayan bir protokol kullanır. Bu adresi ister web uygulamanız içerisinde isterseniz de desktop uygulama içerisinden çağırarak kolay imzayı başlatabilirsiniz. Sign adresi içerisine imza atılacak belge ve bilgilere ait talebin bilgileri yer alır. Bununla ilgili bilgiler aşağıda detaylı olarak anlatılacaktır ama önce kolay imzayı nasıl başlatacağımıza bakalım.
+[Kolay imza](http://www.kolayimza.com) **"sign:...."** adresi ile başlayan bir protokol kullanır. Bu adresi ister web uygulamanız içerisinde isterseniz de desktop uygulama içerisinden çağırarak kolay imzayı başlatabilirsiniz. Sign adresi içerisine imza atılacak belge ve bilgilere ait talebin bilgileri yer alır. Bununla ilgili bilgiler aşağıda detaylı olarak anlatılacaktır ama önce kolay imzayı nasıl başlatacağımıza bakalım.
 
 Web uygulaması içerisinde kolay imzanın başlatılması. HTML içerisinde aşağıdakine benzer bir şekilde bir link yerleştirmeniz yeterlidir.
 
@@ -25,7 +25,7 @@ Kolay İmza-->Uygulama: İsteniyor ise toplu imza cevabı gönderilir.
 
 ## Canlı Kullanım
 
-Örnek canlı kullanımını [buraya tıklayarak](file.php) deneyebilirsiniz.  Bu örneğe ait kaynak kod bu sayfanın devamında verilmiştir.
+Örnek canlı kullanımını [buraya tıklayarak](http://www.kolayimza.com/api/file.php) deneyebilirsiniz.  Bu örneğe ait kaynak kod bu sayfanın devamında verilmiştir.
 
 ## İmza Talebi İsteği Oluşturulur ?
 
@@ -233,14 +233,4 @@ Kurulum sonrasında **HKEY_CLASSES_ROOT\sign\shell\open\command** kütük kaydı
     
     [HKEY_CLASSES_ROOT\sign\shell\open\command]
     @="\"C:\\Program Files (x86)\\KolayImza\\AltiKare.KolayImza.exe\" \"%1\ /console""
-
-## C# Kullanım Örneği
-
-Bu örnekte yukarıda anlatılan tüm işlemlerin bütününü içeren file.aspx adlı bir sayfa görmektesiniz. Bu sayfa aracılığı ile imzalanacak bilgileri ve imzalandıktan sonra yapılacak işlemleri kendi taleplerinize göre uyarlayabilirsiniz.
-
-
-
-## PHP Kullanım Örneği
-
-Üstteki C# örneğine benzer şekilde aşağıda benzer işlemleri yapan  bir PHP örneğini bulabilirsiniz. PHP ortamının doğası gereği imza cevabı hafızada tutulamadığından geçici olarak sig.json isimli bir dosyaya kaydedilmektedir. 
 
